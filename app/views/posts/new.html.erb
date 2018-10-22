@@ -1,0 +1,22 @@
+<h1 class="title">Crear Post</h1>
+
+
+<%= form_for @post do |f| %>
+
+
+  <div>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div>
+    <%= f.label :content %>
+    <%= f.text_area :content %>
+  </div>
+
+
+
+  <div>
+    <%= f.submit "Publicar" %>
+  </div>
+<% end %>
